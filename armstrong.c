@@ -2,22 +2,20 @@
 #include <math.h>
 int main()
 {
-    int n, sum = 0, rem = 0, cube = 0, temp;
-
-    printf ("enter a number");
+    int n, s=0,r =0,c=0,t;
     scanf("%d",&n);
-    temp = n;
+    t=n;
     while (n!= 0)
     {
-        rem=n%10;
-        cube=pow(rem,3);
-        sum = sum+cube;
+        r=n%10;
+        c=pow(rem,3);
+        s=s+c;
         n=n/10;
     }
-    if (sum==temp)
-        printf ("The given no is armstrong no");
+    if (s==t)
+        printf ("No is armstrong no");
     else
-     printf ("The given no is not a armstrong no");
+     printf ("No is not a armstrong");
      return 0;
 }
 
